@@ -76,7 +76,9 @@ class SomeComplexClass {
                 ", address='" + address + '\'' +
                 ", pinCode='" + pinCode + '\'' +
                 ", landmark='" + landmark + '\'' +
-                ", city='" + city + '\'' +
+                ", city='  " + city + '\'' +
                 '}';
+
+
     }
 }
