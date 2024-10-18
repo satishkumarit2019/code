@@ -19,4 +19,11 @@ class LoadDatabase {
             log.info("Preloading " + repository.save(new Employee("Frodo Baggins", "thief")));
         };
     }
+
+    @Bean
+    CommandLineRunner test() {
+        return (args1) -> {
+            log.info(("args1:: "+args1));
+                   };
+    }
 }
