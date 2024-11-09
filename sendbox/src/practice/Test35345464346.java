@@ -1,6 +1,5 @@
 package practice;
 
-import java.security.KeyStore;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -70,6 +69,7 @@ class BaseImpl implements Base {
 
     @Override
     public Character getFirstUnique() {
+        System.out.println("unique"+unique);
        Optional<Map.Entry<Character,Visited>> resu= unique.entrySet().stream().filter(e->e.getValue()==Visited.NO).findFirst();
         return resu.map(Map.Entry::getKey).orElse(null);
 
